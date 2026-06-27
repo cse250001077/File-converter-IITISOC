@@ -6,7 +6,7 @@ const { exec } = require('child_process');
 const cron = require('node-cron');
 
 const app = express();
-const PORT = 3000;
+const PORT = 5000;
 
 // ==========================================
 // PILLAR 1: MULTER INGESTION PIPELINE
