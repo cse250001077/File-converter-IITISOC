@@ -30,5 +30,21 @@
     "postcss": "^8.5.16",
     "tailwindcss": "^4.3.1",
     "vite": "^8.1.0"
+  "name": "file-converter-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.2.0",
+    "node-cron": "^4.5.0",
+    "react-dropzone": "^15.0.0"
   }
 }
