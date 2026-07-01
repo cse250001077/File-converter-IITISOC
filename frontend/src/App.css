@@ -1,0 +1,218 @@
+/* Reset and General Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* App Container Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sidebar - Deep Dark Blue */
+.sidebar {
+  width: 260px;
+  background-color: #0d1b2a;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logo {
+  color: #52b788; /* Mint Green from image */
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #a3b18a;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn.active {
+  background-color: #1b263b;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nav-btn:hover:not(.active) {
+  background-color: #1b263b;
+  color: #ffffff;
+}
+
+/* Main Workspace with Mint-to-Pink Soft Gradient */
+.main-content {
+  flex: 1;
+  background: linear-gradient(135deg, #c7f9cc 0%, #fde2e4 100%);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-header h1 {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Central Workspace Container */
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* White Card Panel with Crimson Dotted Border */
+.upload-zone {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  border-radius: 30px;
+  border: 2px dashed #e63946; /* Crimson dotted outline from your image */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.upload-zone h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.controls {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #2d3748;
+}
+
+.controls select {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  margin-left: 5px;
+}
+
+/* Choose File & Convert File Buttons - Deep Royal Blue */
+.custom-file-upload, .convert-btn {
+  display: inline-block;
+  background-color: #1d3557;
+  color: #ffffff;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+  min-width: 200px;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload:hover, .convert-btn:hover {
+  background-color: #457b9d;
+}
+
+.convert-btn:disabled {
+  background-color: #a8dadc;
+  cursor: not-allowed;
+}
+
+.filename-hint {
+  color: #4a5568;
+  font-size: 14px;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+/* Progress Area with Horizontal Mint-to-Blue Bar Gradient */
+.progress-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #edf2f7;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #52b788 0%, #4ea8de 100%);
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+.status-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+/* Download Button - Solid Jade Green */
+.download-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.download-btn {
+  background-color: #10b981;
+  color: #ffffff;
+  padding: 12px 40px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #059669;
+}
